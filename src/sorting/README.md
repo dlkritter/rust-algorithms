@@ -6,7 +6,7 @@ Two versions of this algorithm exist: a deterministic version that enumerates al
 
 [bogosort-wiki]:https://en.wikipedia.org/wiki/Bogosort
 
-### [Bucket_Sort](./bucket_sort.rs)
+### [Bucket Sort](./bucket_sort.rs)
 
 From [Wikipedia][bucketsort-wiki]: Bucket sort, or bin sort, is a sorting algorithm that works by distributing the elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm. It is a distribution sort, a generalization of pigeonhole sort that allows multiple keys per bucket, and is a cousin of radix sort in the most-to-least significant digit flavor. Bucket sort can be implemented with comparisons and therefore can also be considered a comparison sort algorithm. The computational complexity depends on the algorithm used to sort each bucket, the number of buckets to use, and whether the input is uniformly distributed.
 
@@ -62,7 +62,7 @@ __Sources to read:__
 * [Geeksforgeeks](https://www.geeksforgeeks.org/quick-sort/)
 * [Baeldung](https://www.baeldung.com/cs/cocktail-sort)
 
-### [Comb_Sort](./comb_sort.rs)
+### [Comb Sort](./comb_sort.rs)
 
 Comb Sort is another optimization of Bubble Sort, and achieves this by eliminating small values towards the end of the list. It also uses a shrink-factor (k), which is used in the inner loop of Bubble Sort that performs the swapping of elements. The gap between elements that are compared in Bubble Sort is always 1, but the Comb Sort allows for the gap to be larger than 1 and then shrink by (k) for each iteration. (k) highly affects the efficiency of the algorithm, and is ideal at 1.3.
 
@@ -74,6 +74,19 @@ __Sources to read:__
 * [Wikipedia](https://en.wikipedia.org/wiki/Comb_sort)
 * [Geeksforgeeks](https://www.geeksforgeeks.org/comb-sort/)
 * [javatpoint](https://www.javatpoint.com/comb-sort)
+
+### [Counting Sort](./counting_sort.rs)
+
+A Counting sort is a simple sorting algorithm where each unique element is assigned a key, ranging from 1 to k where k is the number of distinct objects in the list. It involves no comparison between the elements, and uses only the key values as indexes inside the array, and is unburdened by the memory requirements of a bucket sort.
+
+__Properties__
+* Average time complexity: O(n+k)
+* Average space complexity: O(n+k)
+
+__Sources to read:__
+* [Wikipedia](https://en.wikipedia.org/wiki/Counting_sort)
+* [Geeksforgeeks](https://www.geeksforgeeks.org/counting-sort/)
+* [Programiz](https://www.programiz.com/dsa/counting-sort)
 
 
 ### [Quick Sort](./quick_sort.rs)
